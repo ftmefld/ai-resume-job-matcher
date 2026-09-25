@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+google-genai
+sqlmodel
+psycopg2-binary
+pypdf
+python-docx
+python-multipart
+alembic
+httpx
+pytest

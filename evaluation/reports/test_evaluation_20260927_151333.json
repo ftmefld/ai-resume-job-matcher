@@ -1,0 +1,4097 @@
+{
+  "created_at": "2026-09-27T15:13:33.559878+00:00",
+  "dataset": "test",
+  "summary": {
+    "total_cases": 12,
+    "completed_cases": 12,
+    "failed_cases": 0,
+    "completion_rate": 1.0,
+    "requirement_extraction_precision": 0.52,
+    "requirement_extraction_recall": 0.9398,
+    "category_accuracy": 0.9231,
+    "importance_accuracy": 1.0,
+    "match_status_accuracy": 0.9277,
+    "evidence_grounding_rate": 1.0,
+    "evidence_hallucination_rate": 0.0,
+    "score_mae": 4.06,
+    "average_latency_ms": 16341.72,
+    "p95_latency_ms": 21588.87,
+    "fallback_rate": 1.0,
+    "total_llm_calls": 48,
+    "failed_llm_calls": 24,
+    "llm_call_success_rate": 0.5,
+    "primary_model_success_rate": 0.0,
+    "fallback_recovery_rate": 1.0
+  },
+  "domain_summaries": {
+    "education_research": {
+      "total_cases": 2,
+      "completed_cases": 2,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.5185,
+      "requirement_extraction_recall": 1.0,
+      "category_accuracy": 0.9286,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 1.0,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 0.0,
+      "average_latency_ms": 13331.64,
+      "p95_latency_ms": 11508.12,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 8,
+      "failed_llm_calls": 4,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "environmental_engineering": {
+      "total_cases": 1,
+      "completed_cases": 1,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.6667,
+      "requirement_extraction_recall": 0.8571,
+      "category_accuracy": 1.0,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 0.8571,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 3.6,
+      "average_latency_ms": 17416.35,
+      "p95_latency_ms": 17416.35,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 4,
+      "failed_llm_calls": 2,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "finance_accounting": {
+      "total_cases": 2,
+      "completed_cases": 2,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.5833,
+      "requirement_extraction_recall": 0.9333,
+      "category_accuracy": 0.9286,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 0.8667,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 1.65,
+      "average_latency_ms": 17617.37,
+      "p95_latency_ms": 13645.87,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 8,
+      "failed_llm_calls": 4,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "healthcare": {
+      "total_cases": 2,
+      "completed_cases": 2,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.5385,
+      "requirement_extraction_recall": 1.0,
+      "category_accuracy": 1.0,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 1.0,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 0.0,
+      "average_latency_ms": 11977.71,
+      "p95_latency_ms": 11135.86,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 8,
+      "failed_llm_calls": 4,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "marketing_business": {
+      "total_cases": 2,
+      "completed_cases": 2,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.44,
+      "requirement_extraction_recall": 0.9167,
+      "category_accuracy": 0.9091,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 0.9167,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 2.1,
+      "average_latency_ms": 16359.76,
+      "p95_latency_ms": 14173.75,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 8,
+      "failed_llm_calls": 4,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "quality_engineering": {
+      "total_cases": 1,
+      "completed_cases": 1,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.4375,
+      "requirement_extraction_recall": 1.0,
+      "category_accuracy": 0.7143,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 1.0,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 0.0,
+      "average_latency_ms": 12993.53,
+      "p95_latency_ms": 12993.53,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 4,
+      "failed_llm_calls": 2,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    },
+    "software_ai": {
+      "total_cases": 2,
+      "completed_cases": 2,
+      "failed_cases": 0,
+      "completion_rate": 1.0,
+      "requirement_extraction_precision": 0.5217,
+      "requirement_extraction_recall": 0.8571,
+      "category_accuracy": 0.9167,
+      "importance_accuracy": 1.0,
+      "match_status_accuracy": 0.8571,
+      "evidence_grounding_rate": 1.0,
+      "evidence_hallucination_rate": 0.0,
+      "score_mae": 18.8,
+      "average_latency_ms": 23558.91,
+      "p95_latency_ms": 13720.75,
+      "fallback_rate": 1.0,
+      "total_llm_calls": 8,
+      "failed_llm_calls": 4,
+      "llm_call_success_rate": 0.5,
+      "primary_model_success_rate": 0.0,
+      "fallback_recovery_rate": 1.0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "software_ai_test_001",
+      "domain": "software_ai",
+      "extraction": {
+        "predicted_count": 11,
+        "gold_count": 7,
+        "matched_count": 5,
+        "category_correct": 5,
+        "importance_correct": 5,
+        "matched_requirements": [
+          {
+            "gold_requirement": "At least four years of professional software engineering experience",
+            "predicted_requirement": "At least four years of professional software engineering experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong Python programming skills",
+            "predicted_requirement": "Strong Python programming skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Docker experience",
+            "predicted_requirement": "Experience with Docker",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Kubernetes experience",
+            "predicted_requirement": "Kubernetes experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Cloud infrastructure experience",
+            "predicted_requirement": "Experience with cloud infrastructure on AWS, Azure, or GCP",
+            "similarity": 1.0
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Experience designing and maintaining REST APIs",
+            "category": "experience",
+            "importance": "must_have",
+            "source_text": "Experience designing and maintaining REST APIs is required."
+          },
+          {
+            "requirement": "Experience working with relational databases",
+            "category": "experience",
+            "importance": "must_have",
+            "source_text": "Candidates must be comfortable working with relational databases"
+          },
+          {
+            "requirement": "Writing SQL",
+            "category": "skill",
+            "importance": "must_have",
+            "source_text": "writing SQL"
+          },
+          {
+            "requirement": "Experience with automated testing",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "The team also values experience with automated testing"
+          },
+          {
+            "requirement": "Experience with code review",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The team also values experience with... code review"
+          },
+          {
+            "requirement": "Experience with production monitoring",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The team also values experience with... production monitoring."
+          }
+        ],
+        "missed_requirements": [
+          {
+            "requirement": "REST API design and maintenance experience",
+            "category": "skill",
+            "importance": "must_have"
+          },
+          {
+            "requirement": "Relational database and SQL experience",
+            "category": "skill",
+            "importance": "must_have"
+          }
+        ]
+      },
+      "matching": {
+        "status_correct": 6,
+        "status_total": 7,
+        "status_errors": [
+          {
+            "requirement_id": "R003",
+            "requirement": "REST API design and maintenance experience",
+            "expected_status": "matched",
+            "predicted_status": "missing",
+            "evidence": [],
+            "rationale": "The model did not provide verifiable evidence from the resume for this requirement."
+          }
+        ],
+        "evidence_total": 6,
+        "evidence_grounded": 6,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 96.9,
+      "predicted_score": 78.1,
+      "score_absolute_error": 18.8,
+      "predicted_requirements": [
+        {
+          "requirement": "At least four years of professional software engineering experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least four years of professional software engineering experience.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Strong Python programming skills",
+          "category": "skill",
+          "importance": "must_have",
+          "source_text": "Strong Python programming skills are required.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Experience designing and maintaining REST APIs",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Experience designing and maintaining REST APIs is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Experience working with relational databases",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must be comfortable working with relational databases",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Writing SQL",
+          "category": "skill",
+          "importance": "must_have",
+          "source_text": "writing SQL",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Experience with Docker",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "Experience with Docker is important.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Kubernetes experience",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Kubernetes experience is preferred.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Experience with cloud infrastructure on AWS, Azure, or GCP",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with cloud infrastructure on AWS, Azure, or GCP is preferred.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Experience with automated testing",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "The team also values experience with automated testing",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Experience with code review",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The team also values experience with... code review",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Experience with production monitoring",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The team also values experience with... production monitoring.",
+          "requirement_id": "R011"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "At least four years of professional software engineering experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Software engineer with five years of professional experience"
+          ],
+          "rationale": "The candidate explicitly states they have five years of professional experience."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Strong Python programming skills",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "developing Python applications"
+          ],
+          "rationale": "The candidate has experience developing Python applications."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "REST API design and maintenance experience",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The model did not provide verifiable evidence from the resume for this requirement."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Relational database and SQL experience",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "writes complex SQL for PostgreSQL"
+          ],
+          "rationale": "The candidate has experience writing SQL for a relational database."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Docker experience",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Uses Docker for local and production packaging"
+          ],
+          "rationale": "The candidate has direct experience using Docker."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Kubernetes experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "Has not administered Kubernetes clusters but has read deployment manifests and worked with a platform team that manages Kubernetes."
+          ],
+          "rationale": "The candidate has exposure to Kubernetes manifests and workflows but lacks direct administration experience."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Cloud infrastructure experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Has deployed applications to Azure App Service and Azure Container Apps."
+          ],
+          "rationale": "The candidate has experience with cloud infrastructure on Azure."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 33397.07,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1476.52,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 19169.39,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1366.7,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 11375.7,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "software_ai_test_002",
+      "domain": "software_ai",
+      "extraction": {
+        "predicted_count": 12,
+        "gold_count": 7,
+        "matched_count": 7,
+        "category_correct": 6,
+        "importance_correct": 7,
+        "matched_requirements": [
+          {
+            "gold_requirement": "At least three years of applied machine-learning experience",
+            "predicted_requirement": "At least three years of applied machine-learning experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong Python skills",
+            "predicted_requirement": "Strong Python skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "scikit-learn or PyTorch experience",
+            "predicted_requirement": "Hands-on experience with scikit-learn or PyTorch",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Biological or healthcare data experience",
+            "predicted_requirement": "Experience with biological or healthcare data",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "MLflow or experiment-tracking system experience",
+            "predicted_requirement": "Experience using MLflow or another experiment-tracking system",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Cross-validation, class imbalance, and model calibration knowledge",
+            "predicted_requirement": "Understanding of cross-validation, class imbalance, and model calibration",
+            "similarity": 0.875
+          },
+          {
+            "gold_requirement": "Master's degree in a related quantitative field or equivalent professional experience",
+            "predicted_requirement": "Master's degree in Computer Science, Data Science, Bioinformatics, Statistics, or a related quantitative field",
+            "similarity": 0.75
+          }
+        ],
+        "category_errors": [
+          {
+            "gold_requirement": "Cross-validation, class imbalance, and model calibration knowledge",
+            "predicted_requirement": "Understanding of cross-validation, class imbalance, and model calibration",
+            "expected_category": "domain_knowledge",
+            "predicted_category": "skill",
+            "similarity": 0.875
+          }
+        ],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Develop predictive models for biological datasets",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "develop predictive models for biological datasets"
+          },
+          {
+            "requirement": "Collaborate with scientists on model evaluation and deployment",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "collaborate with scientists on model evaluation and deployment."
+          },
+          {
+            "requirement": "Build reproducible training pipelines",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "build reproducible training pipelines"
+          },
+          {
+            "requirement": "Analyze model performance",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "analyze model performance"
+          },
+          {
+            "requirement": "Package models for internal use",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "help package models for internal use."
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 6,
+        "status_total": 7,
+        "status_errors": [
+          {
+            "requirement_id": "R001",
+            "requirement": "Master's degree in a related quantitative field or equivalent professional experience",
+            "expected_status": "matched",
+            "predicted_status": "missing",
+            "evidence": [],
+            "rationale": "The candidate holds a B.S. in Applied Mathematics and explicitly states they have no graduate degree."
+          }
+        ],
+        "evidence_total": 5,
+        "evidence_grounded": 5,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 93.8,
+      "predicted_score": 75.0,
+      "score_absolute_error": 18.8,
+      "predicted_requirements": [
+        {
+          "requirement": "Master's degree in Computer Science, Data Science, Bioinformatics, Statistics, or a related quantitative field",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A master's degree in Computer Science, Data Science, Bioinformatics, Statistics, or a related quantitative field is required",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "At least three years of applied machine-learning experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least three years of applied machine-learning experience.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Strong Python skills",
+          "category": "skill",
+          "importance": "must_have",
+          "source_text": "Strong Python skills ... are required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Hands-on experience with scikit-learn or PyTorch",
+          "category": "tool",
+          "importance": "must_have",
+          "source_text": "hands-on experience with scikit-learn or PyTorch are required.",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Develop predictive models for biological datasets",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "develop predictive models for biological datasets",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Collaborate with scientists on model evaluation and deployment",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "collaborate with scientists on model evaluation and deployment.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Build reproducible training pipelines",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "build reproducible training pipelines",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Analyze model performance",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "analyze model performance",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Package models for internal use",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "help package models for internal use.",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Understanding of cross-validation, class imbalance, and model calibration",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should understand cross-validation, class imbalance, and model calibration.",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Experience with biological or healthcare data",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience with biological or healthcare data is preferred.",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Experience using MLflow or another experiment-tracking system",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience using MLflow or another experiment-tracking system is preferred.",
+          "requirement_id": "R012"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Master's degree in a related quantitative field or equivalent professional experience",
+          "category": "education",
+          "importance": "must_have",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate holds a B.S. in Applied Mathematics and explicitly states they have no graduate degree."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least three years of applied machine-learning experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Machine learning engineer with six years of professional experience"
+          ],
+          "rationale": "The candidate has six years of professional experience as a machine learning engineer, which exceeds the three-year requirement."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Strong Python skills",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Builds classification and regression models in Python"
+          ],
+          "rationale": "The candidate explicitly states they build models in Python."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "scikit-learn or PyTorch experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Builds classification and regression models in Python using scikit-learn and PyTorch."
+          ],
+          "rationale": "The candidate has hands-on experience with both scikit-learn and PyTorch."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Cross-validation, class imbalance, and model calibration knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Regularly uses cross-validation, class-weighting methods, calibration curves, and threshold analysis."
+          ],
+          "rationale": "The candidate demonstrates knowledge of cross-validation, class imbalance (via class-weighting), and model calibration."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Biological or healthcare data experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they have no experience with biological or healthcare datasets."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "MLflow or experiment-tracking system experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Uses MLflow for experiment tracking."
+          ],
+          "rationale": "The candidate has direct experience using MLflow."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 13720.75,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1400.7,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 3233.04,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1113.32,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 7960.61,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "healthcare_test_001",
+      "domain": "healthcare",
+      "extraction": {
+        "predicted_count": 14,
+        "gold_count": 7,
+        "matched_count": 7,
+        "category_correct": 7,
+        "importance_correct": 7,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Active RN license",
+            "predicted_requirement": "Active RN license",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Current BLS certification",
+            "predicted_requirement": "Current BLS certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least two years of emergency department or critical-care nursing experience",
+            "predicted_requirement": "At least two years of recent emergency department or critical-care nursing experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "ACLS certification",
+            "predicted_requirement": "ACLS certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "PALS certification",
+            "predicted_requirement": "PALS certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Epic experience",
+            "predicted_requirement": "Experience with Epic",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Rapid assessment, IV medication, and electronic documentation ability",
+            "predicted_requirement": "Rapid patient assessment",
+            "similarity": 0.6667
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Triage patients",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The nurse will triage patients"
+          },
+          {
+            "requirement": "Administer medications",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "administer medications"
+          },
+          {
+            "requirement": "Monitor changing conditions",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "monitor changing conditions"
+          },
+          {
+            "requirement": "Document care",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "document care"
+          },
+          {
+            "requirement": "Coordinate with physicians and emergency-services staff",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "coordinate with physicians and emergency-services staff"
+          },
+          {
+            "requirement": "IV medication administration",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "IV medication administration"
+          },
+          {
+            "requirement": "Electronic clinical documentation",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "electronic clinical documentation"
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 7,
+        "status_total": 7,
+        "status_errors": [],
+        "evidence_total": 5,
+        "evidence_grounded": 5,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 78.1,
+      "predicted_score": 78.1,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Triage patients",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The nurse will triage patients",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Administer medications",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "administer medications",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Monitor changing conditions",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "monitor changing conditions",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Document care",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "document care",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Coordinate with physicians and emergency-services staff",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "coordinate with physicians and emergency-services staff",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Active RN license",
+          "category": "license",
+          "importance": "must_have",
+          "source_text": "Applicants must hold an active RN license",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Current BLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "current BLS certification",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "At least two years of recent emergency department or critical-care nursing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "At least two years of recent emergency department or critical-care nursing experience is required",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "ACLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "ACLS certification is required",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Rapid patient assessment",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should be comfortable with rapid patient assessment",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "IV medication administration",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "IV medication administration",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Electronic clinical documentation",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "electronic clinical documentation",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "PALS certification",
+          "category": "certification",
+          "importance": "preferred",
+          "source_text": "PALS certification is preferred",
+          "requirement_id": "R013"
+        },
+        {
+          "requirement": "Experience with Epic",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with Epic is preferred",
+          "requirement_id": "R014"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Active RN license",
+          "category": "license",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "active RN license"
+          ],
+          "rationale": "The resume explicitly states the candidate has an active RN license."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Current BLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "current BLS and ACLS certifications"
+          ],
+          "rationale": "The resume confirms the candidate holds a current BLS certification."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "At least two years of emergency department or critical-care nursing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "one year of emergency department experience"
+          ],
+          "rationale": "The candidate has one year of emergency department experience, which does not meet the two-year requirement."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "ACLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "current BLS and ACLS certifications"
+          ],
+          "rationale": "The resume confirms the candidate holds an ACLS certification."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Rapid assessment, IV medication, and electronic documentation ability",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Performs rapid assessments, starts IVs, administers medications, and documents care in Cerner"
+          ],
+          "rationale": "The candidate demonstrates experience with rapid assessment, IV medication administration, and electronic documentation."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "PALS certification",
+          "category": "certification",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume explicitly states the candidate does not hold PALS certification."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Epic experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume explicitly states the candidate has not used Epic."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 12819.56,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1241.51,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 3561.31,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1249.41,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 6760.11,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "healthcare_test_002",
+      "domain": "healthcare",
+      "extraction": {
+        "predicted_count": 12,
+        "gold_count": 7,
+        "matched_count": 7,
+        "category_correct": 7,
+        "importance_correct": 7,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Active pharmacist license",
+            "predicted_requirement": "Active pharmacist license in the state of practice",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Doctor of Pharmacy degree or equivalent accredited pharmacy degree",
+            "predicted_requirement": "Doctor of Pharmacy degree or equivalent accredited pharmacy degree",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Current immunization certification",
+            "predicted_requirement": "Current immunization certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Community or retail pharmacy experience",
+            "predicted_requirement": "Experience working in a community or retail pharmacy setting",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Commercial pharmacy management system experience",
+            "predicted_requirement": "Experience using a commercial pharmacy management system",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least two years of community pharmacy experience",
+            "predicted_requirement": "At least two years of community pharmacy experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Spanish-language proficiency",
+            "predicted_requirement": "Spanish-language proficiency",
+            "similarity": 1.0
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Verify prescriptions",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The pharmacist will verify prescriptions"
+          },
+          {
+            "requirement": "Counsel patients",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "counsel patients"
+          },
+          {
+            "requirement": "Administer eligible vaccines",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "administer eligible vaccines"
+          },
+          {
+            "requirement": "Supervise pharmacy technicians",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "supervise pharmacy technicians"
+          },
+          {
+            "requirement": "Support medication-safety procedures",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "support medication-safety procedures"
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 7,
+        "status_total": 7,
+        "status_errors": [],
+        "evidence_total": 7,
+        "evidence_grounded": 7,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 93.3,
+      "predicted_score": 93.3,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Verify prescriptions",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The pharmacist will verify prescriptions",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Counsel patients",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "counsel patients",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Administer eligible vaccines",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "administer eligible vaccines",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Supervise pharmacy technicians",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "supervise pharmacy technicians",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Support medication-safety procedures",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "support medication-safety procedures",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Active pharmacist license in the state of practice",
+          "category": "license",
+          "importance": "must_have",
+          "source_text": "Applicants must hold an active pharmacist license in the state of practice.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Doctor of Pharmacy degree or equivalent accredited pharmacy degree",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A Doctor of Pharmacy degree or equivalent accredited pharmacy degree is required.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Current immunization certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "Candidates must have current immunization certification",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Experience working in a community or retail pharmacy setting",
+          "category": "experience",
+          "importance": "important",
+          "source_text": "should have experience working in a community or retail pharmacy setting.",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Experience using a commercial pharmacy management system",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "Experience using a commercial pharmacy management system is important.",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "At least two years of community pharmacy experience",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "At least two years of community pharmacy experience is preferred.",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Spanish-language proficiency",
+          "category": "language",
+          "importance": "preferred",
+          "source_text": "Spanish-language proficiency is preferred",
+          "requirement_id": "R012"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Active pharmacist license",
+          "category": "license",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Licensed pharmacist"
+          ],
+          "rationale": "The candidate explicitly states they are a licensed pharmacist."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Doctor of Pharmacy degree or equivalent accredited pharmacy degree",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "PharmD"
+          ],
+          "rationale": "The candidate holds a PharmD degree."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Current immunization certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "current immunization certification"
+          ],
+          "rationale": "The candidate confirms they have current immunization certification."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Community or retail pharmacy experience",
+          "category": "experience",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "eighteen months of community pharmacy experience"
+          ],
+          "rationale": "The candidate has eighteen months of community pharmacy experience."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Commercial pharmacy management system experience",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Uses a commercial pharmacy management system daily."
+          ],
+          "rationale": "The candidate confirms daily use of a commercial pharmacy management system."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "At least two years of community pharmacy experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "eighteen months of community pharmacy experience"
+          ],
+          "rationale": "The candidate has eighteen months of community pharmacy experience, which is less than the preferred two years."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Spanish-language proficiency",
+          "category": "language",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "Conversational Spanish skills are limited to basic greetings and simple directions."
+          ],
+          "rationale": "The candidate has limited Spanish skills, which does not meet full proficiency."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 11135.86,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1468.44,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 3314.33,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1372.87,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 4968.92,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "finance_test_001",
+      "domain": "finance_accounting",
+      "extraction": {
+        "predicted_count": 14,
+        "gold_count": 7,
+        "matched_count": 6,
+        "category_correct": 6,
+        "importance_correct": 6,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Bachelor's degree in Finance, Accounting, Economics, or related field",
+            "predicted_requirement": "Bachelor's degree in Finance, Accounting, Economics, or a related field",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least two years of commercial credit, lending, audit, or financial-analysis experience",
+            "predicted_requirement": "At least two years of commercial credit, lending, audit, or financial-analysis experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong financial-statement analysis skills",
+            "predicted_requirement": "Strong financial-statement analysis skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Advanced Excel skills",
+            "predicted_requirement": "Advanced Excel skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Commercial credit platform experience",
+            "predicted_requirement": "Experience with Moody's Analytics, nCino, or another commercial credit platform",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Formal credit-training program experience",
+            "predicted_requirement": "Formal credit-training program experience",
+            "similarity": 1.0
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Evaluate commercial borrower financial statements",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "evaluate commercial borrower financial statements"
+          },
+          {
+            "requirement": "Spread financials",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "spread financials"
+          },
+          {
+            "requirement": "Calculate credit metrics",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "calculate credit metrics"
+          },
+          {
+            "requirement": "Summarize borrower performance",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "summarize borrower performance"
+          },
+          {
+            "requirement": "Prepare written credit memoranda",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "prepare written credit memoranda"
+          },
+          {
+            "requirement": "Understanding of cash-flow analysis",
+            "category": "domain_knowledge",
+            "importance": "important",
+            "source_text": "Candidates should understand cash-flow analysis"
+          },
+          {
+            "requirement": "Understanding of leverage metrics",
+            "category": "domain_knowledge",
+            "importance": "important",
+            "source_text": "leverage metrics"
+          },
+          {
+            "requirement": "Understanding of basic commercial lending concepts",
+            "category": "domain_knowledge",
+            "importance": "important",
+            "source_text": "basic commercial lending concepts"
+          }
+        ],
+        "missed_requirements": [
+          {
+            "requirement": "Cash-flow, leverage, and commercial lending knowledge",
+            "category": "domain_knowledge",
+            "importance": "important"
+          }
+        ]
+      },
+      "matching": {
+        "status_correct": 5,
+        "status_total": 7,
+        "status_errors": [
+          {
+            "requirement_id": "R004",
+            "requirement": "Cash-flow, leverage, and commercial lending knowledge",
+            "expected_status": "partial",
+            "predicted_status": "matched",
+            "evidence": [
+              "Performs cash-flow analysis, leverage calculations"
+            ],
+            "rationale": "The candidate demonstrates knowledge of cash-flow analysis and leverage calculations."
+          },
+          {
+            "requirement_id": "R007",
+            "requirement": "Formal credit-training program experience",
+            "expected_status": "matched",
+            "predicted_status": "partial",
+            "evidence": [
+              "Completed an internal six-week credit-risk fundamentals course."
+            ],
+            "rationale": "The candidate completed an internal credit-risk course, which is relevant but may not constitute a formal credit-training program typically associated with commercial banking."
+          }
+        ],
+        "evidence_total": 6,
+        "evidence_grounded": 6,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 86.7,
+      "predicted_score": 90.0,
+      "score_absolute_error": 3.3,
+      "predicted_requirements": [
+        {
+          "requirement": "Evaluate commercial borrower financial statements",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "evaluate commercial borrower financial statements",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Spread financials",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "spread financials",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Calculate credit metrics",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "calculate credit metrics",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Summarize borrower performance",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "summarize borrower performance",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Prepare written credit memoranda",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "prepare written credit memoranda",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Bachelor's degree in Finance, Accounting, Economics, or a related field",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Finance, Accounting, Economics, or a related field is required.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "At least two years of commercial credit, lending, audit, or financial-analysis experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least two years of commercial credit, lending, audit, or financial-analysis experience.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Strong financial-statement analysis skills",
+          "category": "skill",
+          "importance": "must_have",
+          "source_text": "Strong financial-statement analysis skills are required.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Understanding of cash-flow analysis",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "Candidates should understand cash-flow analysis",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Understanding of leverage metrics",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "leverage metrics",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Understanding of basic commercial lending concepts",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "basic commercial lending concepts",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Advanced Excel skills",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "Advanced Excel skills are important.",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "Experience with Moody's Analytics, nCino, or another commercial credit platform",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with Moody's Analytics, nCino, or another commercial credit platform is preferred.",
+          "requirement_id": "R013"
+        },
+        {
+          "requirement": "Formal credit-training program experience",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Formal credit-training program experience is preferred.",
+          "requirement_id": "R014"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Finance, Accounting, Economics, or related field",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.S. in Finance"
+          ],
+          "rationale": "The candidate holds a B.S. in Finance, which satisfies the requirement for a bachelor's degree in a related field."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least two years of commercial credit, lending, audit, or financial-analysis experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "three years of experience analyzing middle-market company financial statements"
+          ],
+          "rationale": "The candidate has three years of financial-analysis experience, meeting the minimum two-year requirement."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Strong financial-statement analysis skills",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "analyzing middle-market company financial statements"
+          ],
+          "rationale": "The candidate explicitly lists experience in analyzing financial statements."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Cash-flow, leverage, and commercial lending knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Performs cash-flow analysis, leverage calculations"
+          ],
+          "rationale": "The candidate demonstrates knowledge of cash-flow analysis and leverage calculations."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Advanced Excel skills",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Advanced Excel user."
+          ],
+          "rationale": "The candidate identifies as an advanced Excel user."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Commercial credit platform experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they have not used Moody's Analytics or nCino and does not mention other commercial credit platforms."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Formal credit-training program experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "Completed an internal six-week credit-risk fundamentals course."
+          ],
+          "rationale": "The candidate completed an internal credit-risk course, which is relevant but may not constitute a formal credit-training program typically associated with commercial banking."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 13645.87,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1312.33,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 5397.27,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1278.64,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 5643.25,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "finance_test_002",
+      "domain": "finance_accounting",
+      "extraction": {
+        "predicted_count": 10,
+        "gold_count": 8,
+        "matched_count": 8,
+        "category_correct": 7,
+        "importance_correct": 8,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Bachelor's degree in Accounting",
+            "predicted_requirement": "Bachelor's degree in Accounting",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "CPA certification",
+            "predicted_requirement": "CPA certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least four years of accounting experience with public accounting or SEC reporting exposure",
+            "predicted_requirement": "At least four years of accounting experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong U.S. GAAP knowledge",
+            "predicted_requirement": "Strong knowledge of U.S. GAAP",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Workiva experience",
+            "predicted_requirement": "Experience with Workiva",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "OneStream or HFM experience",
+            "predicted_requirement": "Experience with consolidation systems such as OneStream or HFM",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong written documentation skills",
+            "predicted_requirement": "Strong written documentation skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "10-K and 10-Q reporting experience",
+            "predicted_requirement": "Experience preparing or supporting SEC filings such as Forms 10-K and 10-Q",
+            "similarity": 0.8333
+          }
+        ],
+        "category_errors": [
+          {
+            "gold_requirement": "10-K and 10-Q reporting experience",
+            "predicted_requirement": "Experience preparing or supporting SEC filings such as Forms 10-K and 10-Q",
+            "expected_category": "responsibility",
+            "predicted_category": "experience",
+            "similarity": 0.8333
+          }
+        ],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Public accounting or SEC reporting exposure",
+            "category": "experience",
+            "importance": "must_have",
+            "source_text": "including public accounting or SEC reporting exposure."
+          },
+          {
+            "requirement": "Prepare accounting memos and disclosure support",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "the role prepares accounting memos and disclosure support."
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 8,
+        "status_total": 8,
+        "status_errors": [],
+        "evidence_total": 8,
+        "evidence_grounded": 8,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 94.7,
+      "predicted_score": 94.7,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree in Accounting",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Accounting is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "CPA certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "CPA certification is required.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "At least four years of accounting experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least four years of accounting experience",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Public accounting or SEC reporting exposure",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "including public accounting or SEC reporting exposure.",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Strong knowledge of U.S. GAAP",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "Strong knowledge of U.S. GAAP is required.",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Experience preparing or supporting SEC filings such as Forms 10-K and 10-Q",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Experience preparing or supporting SEC filings such as Forms 10-K and 10-Q is required.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Experience with Workiva",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with Workiva is preferred.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Experience with consolidation systems such as OneStream or HFM",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with consolidation systems such as OneStream or HFM is preferred.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Strong written documentation skills",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Strong written documentation skills are important",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Prepare accounting memos and disclosure support",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "the role prepares accounting memos and disclosure support.",
+          "requirement_id": "R010"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Accounting",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.S. in Accounting"
+          ],
+          "rationale": "The candidate holds a B.S. in Accounting."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "CPA certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "active CPA license"
+          ],
+          "rationale": "The candidate possesses an active CPA license."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "At least four years of accounting experience with public accounting or SEC reporting exposure",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "six years of experience",
+            "three years in public accounting"
+          ],
+          "rationale": "The candidate has six years of total accounting experience, including three years in public accounting."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Strong U.S. GAAP knowledge",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "U.S. GAAP research"
+          ],
+          "rationale": "The candidate has experience with U.S. GAAP research."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "10-K and 10-Q reporting experience",
+          "category": "responsibility",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Supports 10-K and 10-Q preparation"
+          ],
+          "rationale": "The candidate has experience supporting 10-K and 10-Q preparation."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Workiva experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Uses Workiva for external reporting"
+          ],
+          "rationale": "The candidate has experience using Workiva."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "OneStream or HFM experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they have not used OneStream or HFM, using Oracle FCCS instead."
+        },
+        {
+          "requirement_id": "R008",
+          "requirement": "Strong written documentation skills",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "technical accounting memos"
+          ],
+          "rationale": "The candidate has experience writing technical accounting memos, which demonstrates written documentation skills."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 21588.87,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1157.1,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 7318.21,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1135.86,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 11965.57,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "engineering_test_001",
+      "domain": "environmental_engineering",
+      "extraction": {
+        "predicted_count": 9,
+        "gold_count": 7,
+        "matched_count": 6,
+        "category_correct": 6,
+        "importance_correct": 6,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Bachelor's degree in Environmental, Civil, or Chemical Engineering",
+            "predicted_requirement": "Bachelor's degree in Environmental, Civil, or Chemical Engineering",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least three years of environmental engineering or compliance experience",
+            "predicted_requirement": "At least three years of environmental engineering or regulatory-compliance experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "EIT certification",
+            "predicted_requirement": "EIT certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "GIS experience",
+            "predicted_requirement": "Experience with GIS",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Clean Water Act and NPDES knowledge",
+            "predicted_requirement": "Knowledge of Clean Water Act permitting",
+            "similarity": 0.6667
+          },
+          {
+            "gold_requirement": "Direct state environmental agency experience",
+            "predicted_requirement": "Experience working directly with state environmental agencies",
+            "similarity": 0.6476
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Knowledge of NPDES requirements",
+            "category": "domain_knowledge",
+            "importance": "must_have",
+            "source_text": "Knowledge of Clean Water Act permitting and NPDES requirements is required."
+          },
+          {
+            "requirement": "Ability to analyze water quality data",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "Candidates should be able to analyze water quality data"
+          },
+          {
+            "requirement": "Ability to prepare clear technical reports",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "prepare clear technical reports"
+          }
+        ],
+        "missed_requirements": [
+          {
+            "requirement": "Water-quality analysis and technical report preparation",
+            "category": "skill",
+            "importance": "important"
+          }
+        ]
+      },
+      "matching": {
+        "status_correct": 6,
+        "status_total": 7,
+        "status_errors": [
+          {
+            "requirement_id": "R007",
+            "requirement": "Direct state environmental agency experience",
+            "expected_status": "partial",
+            "predicted_status": "missing",
+            "evidence": [],
+            "rationale": "The candidate states that regulatory coordination has been through senior project managers rather than direct agency ownership."
+          }
+        ],
+        "evidence_total": 5,
+        "evidence_grounded": 5,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 89.3,
+      "predicted_score": 85.7,
+      "score_absolute_error": 3.6,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree in Environmental, Civil, or Chemical Engineering",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Environmental, Civil, or Chemical Engineering is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "At least three years of environmental engineering or regulatory-compliance experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least three years of environmental engineering or regulatory-compliance experience.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Knowledge of Clean Water Act permitting",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "Knowledge of Clean Water Act permitting and NPDES requirements is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Knowledge of NPDES requirements",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "Knowledge of Clean Water Act permitting and NPDES requirements is required.",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Ability to analyze water quality data",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should be able to analyze water quality data",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Ability to prepare clear technical reports",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "prepare clear technical reports",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "EIT certification",
+          "category": "certification",
+          "importance": "preferred",
+          "source_text": "EIT certification is preferred.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Experience with GIS",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with GIS is preferred.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Experience working directly with state environmental agencies",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience working directly with state environmental agencies is a plus.",
+          "requirement_id": "R009"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Environmental, Civil, or Chemical Engineering",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.S. in Civil Engineering"
+          ],
+          "rationale": "The candidate holds a B.S. in Civil Engineering, which satisfies the requirement."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least three years of environmental engineering or compliance experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "four years of consulting experience focused on stormwater and industrial wastewater compliance"
+          ],
+          "rationale": "The candidate has four years of relevant experience, exceeding the three-year requirement."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Clean Water Act and NPDES knowledge",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Prepares NPDES permit applications"
+          ],
+          "rationale": "The candidate demonstrates experience with NPDES permit applications, which implies knowledge of the Clean Water Act."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Water-quality analysis and technical report preparation",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "analyzes water-quality data, and writes technical compliance reports"
+          ],
+          "rationale": "The candidate explicitly states experience in analyzing water-quality data and writing technical reports."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "EIT certification",
+          "category": "certification",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they do not hold an EIT certification."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "GIS experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Uses ArcGIS Pro occasionally for site mapping"
+          ],
+          "rationale": "The candidate has experience using ArcGIS Pro."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Direct state environmental agency experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate states that regulatory coordination has been through senior project managers rather than direct agency ownership."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 17416.35,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1411.21,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 9726.77,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1394.42,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 4871.47,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "engineering_test_002",
+      "domain": "quality_engineering",
+      "extraction": {
+        "predicted_count": 16,
+        "gold_count": 7,
+        "matched_count": 7,
+        "category_correct": 5,
+        "importance_correct": 7,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Bachelor's degree in Engineering or related technical field",
+            "predicted_requirement": "Bachelor's degree in Engineering or a related technical field",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least three years of quality engineering experience in a regulated manufacturing environment",
+            "predicted_requirement": "At least three years of quality engineering experience in a regulated manufacturing environment",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Minitab experience",
+            "predicted_requirement": "Experience with Minitab",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Certified Quality Engineer certification",
+            "predicted_requirement": "Certified Quality Engineer (CQE) certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "CAPA or nonconformance investigation experience",
+            "predicted_requirement": "Experience leading CAPA or nonconformance investigations",
+            "similarity": 0.8
+          },
+          {
+            "gold_requirement": "ISO 13485 and FDA Quality System knowledge",
+            "predicted_requirement": "Working knowledge of ISO 13485",
+            "similarity": 0.6
+          },
+          {
+            "gold_requirement": "Statistical quality and measurement-system knowledge",
+            "predicted_requirement": "Understand measurement-system concepts",
+            "similarity": 0.6
+          }
+        ],
+        "category_errors": [
+          {
+            "gold_requirement": "CAPA or nonconformance investigation experience",
+            "predicted_requirement": "Experience leading CAPA or nonconformance investigations",
+            "expected_category": "responsibility",
+            "predicted_category": "experience",
+            "similarity": 0.8
+          },
+          {
+            "gold_requirement": "Statistical quality and measurement-system knowledge",
+            "predicted_requirement": "Understand measurement-system concepts",
+            "expected_category": "domain_knowledge",
+            "predicted_category": "skill",
+            "similarity": 0.6
+          }
+        ],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Working knowledge of FDA Quality System requirements",
+            "category": "domain_knowledge",
+            "importance": "must_have",
+            "source_text": "Working knowledge of ISO 13485 and FDA Quality System requirements is required."
+          },
+          {
+            "requirement": "Support manufacturing investigations",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "support manufacturing investigations"
+          },
+          {
+            "requirement": "Support corrective actions",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "support... corrective actions"
+          },
+          {
+            "requirement": "Support supplier quality",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "support... supplier quality"
+          },
+          {
+            "requirement": "Support validation activities",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "support... validation activities"
+          },
+          {
+            "requirement": "Analyze nonconformances",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "analyze nonconformances"
+          },
+          {
+            "requirement": "Participate in root-cause investigations",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "participate in root-cause investigations"
+          },
+          {
+            "requirement": "Maintain quality documentation",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "maintain quality documentation"
+          },
+          {
+            "requirement": "Understand statistical quality methods",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "Candidates should understand statistical quality methods"
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 7,
+        "status_total": 7,
+        "status_errors": [],
+        "evidence_total": 6,
+        "evidence_grounded": 6,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 75.0,
+      "predicted_score": 75.0,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree in Engineering or a related technical field",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Engineering or a related technical field is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "At least three years of quality engineering experience in a regulated manufacturing environment",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least three years of quality engineering experience in a regulated manufacturing environment.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Working knowledge of ISO 13485",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "Working knowledge of ISO 13485 and FDA Quality System requirements is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Working knowledge of FDA Quality System requirements",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "Working knowledge of ISO 13485 and FDA Quality System requirements is required.",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Experience leading CAPA or nonconformance investigations",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Experience leading CAPA or nonconformance investigations is required.",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Support manufacturing investigations",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "support manufacturing investigations",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Support corrective actions",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "support... corrective actions",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Support supplier quality",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "support... supplier quality",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Support validation activities",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "support... validation activities",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Analyze nonconformances",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "analyze nonconformances",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Participate in root-cause investigations",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "participate in root-cause investigations",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Maintain quality documentation",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "maintain quality documentation",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "Understand statistical quality methods",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should understand statistical quality methods",
+          "requirement_id": "R013"
+        },
+        {
+          "requirement": "Understand measurement-system concepts",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "understand... measurement-system concepts",
+          "requirement_id": "R014"
+        },
+        {
+          "requirement": "Experience with Minitab",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "Experience with Minitab is preferred.",
+          "requirement_id": "R015"
+        },
+        {
+          "requirement": "Certified Quality Engineer (CQE) certification",
+          "category": "certification",
+          "importance": "preferred",
+          "source_text": "Certified Quality Engineer (CQE) certification is preferred.",
+          "requirement_id": "R016"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Engineering or related technical field",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.S. in Industrial Engineering"
+          ],
+          "rationale": "The candidate holds a B.S. in Industrial Engineering, which is a technical field."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least three years of quality engineering experience in a regulated manufacturing environment",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "four years of experience in automotive manufacturing"
+          ],
+          "rationale": "The candidate has four years of quality engineering experience, but it is in automotive manufacturing rather than a regulated manufacturing environment (typically implying medical/pharma in this context)."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "ISO 13485 and FDA Quality System knowledge",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "introductory knowledge of ISO 13485 from self-study"
+          ],
+          "rationale": "The candidate has introductory knowledge of ISO 13485 but lacks professional experience and does not mention FDA Quality System knowledge."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "CAPA or nonconformance investigation experience",
+          "category": "responsibility",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Leads root-cause investigations, corrective actions"
+          ],
+          "rationale": "The candidate has experience leading root-cause investigations and corrective actions, which corresponds to CAPA."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Statistical quality and measurement-system knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Uses control charts, capability studies, and measurement-system analysis."
+          ],
+          "rationale": "The candidate demonstrates knowledge of statistical quality methods and measurement-system concepts."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Minitab experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Uses Minitab regularly."
+          ],
+          "rationale": "The candidate has experience using Minitab."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "Certified Quality Engineer certification",
+          "category": "certification",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they do not hold CQE certification."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 12993.53,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1307.62,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 7517.97,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1180.62,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2970.97,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "marketing_test_001",
+      "domain": "marketing_business",
+      "extraction": {
+        "predicted_count": 13,
+        "gold_count": 6,
+        "matched_count": 5,
+        "category_correct": 4,
+        "importance_correct": 5,
+        "matched_requirements": [
+          {
+            "gold_requirement": "At least four years of CRM or lifecycle marketing experience",
+            "predicted_requirement": "At least four years of CRM, lifecycle, retention, or email marketing experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Marketing automation platform experience",
+            "predicted_requirement": "Hands-on experience with a marketing automation platform such as Braze, Iterable, Salesforce Marketing Cloud, or HubSpot",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong analytical skills",
+            "predicted_requirement": "Strong analytical skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "SQL experience",
+            "predicted_requirement": "Experience with SQL",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Audience segmentation and A/B testing experience",
+            "predicted_requirement": "Experience designing A/B tests",
+            "similarity": 0.6
+          }
+        ],
+        "category_errors": [
+          {
+            "gold_requirement": "Audience segmentation and A/B testing experience",
+            "predicted_requirement": "Experience designing A/B tests",
+            "expected_category": "skill",
+            "predicted_category": "responsibility",
+            "similarity": 0.6
+          }
+        ],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Experience designing audience segments",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "Candidates should have experience designing audience segments"
+          },
+          {
+            "requirement": "Experience managing SMS programs",
+            "category": "experience",
+            "importance": "preferred",
+            "source_text": "Experience managing SMS programs is preferred."
+          },
+          {
+            "requirement": "Clear communication with creative, legal, product, and analytics stakeholders",
+            "category": "responsibility",
+            "importance": "must_have",
+            "source_text": "The role also requires clear communication with creative, legal, product, and analytics stakeholders."
+          },
+          {
+            "requirement": "Own lifecycle campaigns across email, SMS, and mobile push",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "Beacon Travel is seeking a CRM Marketing Manager to own lifecycle campaigns across email, SMS, and mobile push."
+          },
+          {
+            "requirement": "Develop segmentation strategies",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The manager will develop segmentation strategies"
+          },
+          {
+            "requirement": "Coordinate campaign calendars",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "coordinate campaign calendars"
+          },
+          {
+            "requirement": "Analyze customer behavior",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "analyze customer behavior"
+          },
+          {
+            "requirement": "Partner with analytics and creative teams",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "partner with analytics and creative teams."
+          }
+        ],
+        "missed_requirements": [
+          {
+            "requirement": "SMS program management experience",
+            "category": "responsibility",
+            "importance": "preferred"
+          }
+        ]
+      },
+      "matching": {
+        "status_correct": 5,
+        "status_total": 6,
+        "status_errors": [
+          {
+            "requirement_id": "R005",
+            "requirement": "SQL experience",
+            "expected_status": "partial",
+            "predicted_status": "matched",
+            "evidence": [
+              "Has basic SQL experience for simple audience queries."
+            ],
+            "rationale": "The candidate confirms having SQL experience."
+          }
+        ],
+        "evidence_total": 5,
+        "evidence_grounded": 5,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 87.5,
+      "predicted_score": 91.7,
+      "score_absolute_error": 4.2,
+      "predicted_requirements": [
+        {
+          "requirement": "At least four years of CRM, lifecycle, retention, or email marketing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Applicants must have at least four years of CRM, lifecycle, retention, or email marketing experience.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Hands-on experience with a marketing automation platform such as Braze, Iterable, Salesforce Marketing Cloud, or HubSpot",
+          "category": "tool",
+          "importance": "must_have",
+          "source_text": "Hands-on experience with a marketing automation platform such as Braze, Iterable, Salesforce Marketing Cloud, or HubSpot is required.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Experience designing audience segments",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "Candidates should have experience designing audience segments",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Experience designing A/B tests",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "Candidates should have experience designing... A/B tests.",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Strong analytical skills",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Strong analytical skills are important.",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Experience with SQL",
+          "category": "skill",
+          "importance": "preferred",
+          "source_text": "Experience with SQL is preferred.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Experience managing SMS programs",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience managing SMS programs is preferred.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Clear communication with creative, legal, product, and analytics stakeholders",
+          "category": "responsibility",
+          "importance": "must_have",
+          "source_text": "The role also requires clear communication with creative, legal, product, and analytics stakeholders.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Own lifecycle campaigns across email, SMS, and mobile push",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "Beacon Travel is seeking a CRM Marketing Manager to own lifecycle campaigns across email, SMS, and mobile push.",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Develop segmentation strategies",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The manager will develop segmentation strategies",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Coordinate campaign calendars",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "coordinate campaign calendars",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Analyze customer behavior",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "analyze customer behavior",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "Partner with analytics and creative teams",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "partner with analytics and creative teams.",
+          "requirement_id": "R013"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "At least four years of CRM or lifecycle marketing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Lifecycle marketer with five years of retention and email marketing experience."
+          ],
+          "rationale": "The candidate has five years of experience in retention and email marketing, which meets the four-year requirement."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Marketing automation platform experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Builds journeys and audience segments in Braze"
+          ],
+          "rationale": "The candidate has hands-on experience with Braze, which is listed as an example of a marketing automation platform."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Audience segmentation and A/B testing experience",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Builds journeys and audience segments in Braze, designs A/B tests"
+          ],
+          "rationale": "The candidate explicitly mentions experience designing audience segments and A/B tests."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Strong analytical skills",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "analyzes conversion and retention trends"
+          ],
+          "rationale": "The candidate demonstrates analytical skills through the analysis of conversion and retention trends."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "SQL experience",
+          "category": "skill",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Has basic SQL experience for simple audience queries."
+          ],
+          "rationale": "The candidate confirms having SQL experience."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "SMS program management experience",
+          "category": "responsibility",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they have not owned an SMS marketing program."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 18545.78,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1039.8,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 7348.87,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1071.35,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 9073.65,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "marketing_test_002",
+      "domain": "marketing_business",
+      "extraction": {
+        "predicted_count": 12,
+        "gold_count": 6,
+        "matched_count": 6,
+        "category_correct": 6,
+        "importance_correct": 6,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Strong organizational and written communication skills",
+            "predicted_requirement": "Strong organizational skills",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Project-management tool experience",
+            "predicted_requirement": "Experience using a project-management tool such as Asana, Monday.com, Smartsheet, or Jira",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Bachelor's degree",
+            "predicted_requirement": "Bachelor's degree",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "CAPM certification",
+            "predicted_requirement": "CAPM certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Logistics, transportation, or warehouse operations experience",
+            "predicted_requirement": "Experience working with logistics, transportation, or warehouse operations",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least two years of project coordination or related experience",
+            "predicted_requirement": "At least two years of project coordination, operations, or administrative project experience",
+            "similarity": 0.9
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Maintain project schedules",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "maintain project schedules"
+          },
+          {
+            "requirement": "Track action items",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "track action items"
+          },
+          {
+            "requirement": "Prepare meeting notes",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "prepare meeting notes"
+          },
+          {
+            "requirement": "Update status reports",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "update status reports"
+          },
+          {
+            "requirement": "Help teams manage risks and dependencies",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "help teams manage risks and dependencies"
+          },
+          {
+            "requirement": "Strong written communication skills",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "Strong organizational and written communication skills are important."
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 6,
+        "status_total": 6,
+        "status_errors": [],
+        "evidence_total": 4,
+        "evidence_grounded": 4,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 66.7,
+      "predicted_score": 66.7,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Maintain project schedules",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "maintain project schedules",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Track action items",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "track action items",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Prepare meeting notes",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "prepare meeting notes",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Update status reports",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "update status reports",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Help teams manage risks and dependencies",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "help teams manage risks and dependencies",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "At least two years of project coordination, operations, or administrative project experience",
+          "category": "experience",
+          "importance": "important",
+          "source_text": "Candidates should have at least two years of project coordination, operations, or administrative project experience.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Strong organizational skills",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Strong organizational and written communication skills are important.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Strong written communication skills",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Strong organizational and written communication skills are important.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Experience using a project-management tool such as Asana, Monday.com, Smartsheet, or Jira",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "Experience using a project-management tool such as Asana, Monday.com, Smartsheet, or Jira is important.",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Bachelor's degree",
+          "category": "education",
+          "importance": "preferred",
+          "source_text": "A bachelor's degree is preferred but not required.",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "CAPM certification",
+          "category": "certification",
+          "importance": "preferred",
+          "source_text": "CAPM certification is preferred.",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Experience working with logistics, transportation, or warehouse operations",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience working with logistics, transportation, or warehouse operations is preferred.",
+          "requirement_id": "R012"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "At least two years of project coordination or related experience",
+          "category": "experience",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Project coordinator with three years of experience supporting software implementation and internal operations projects."
+          ],
+          "rationale": "The candidate has three years of project coordination experience, which meets the requirement of at least two years."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Strong organizational and written communication skills",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Maintains schedules, action logs, meeting notes, and weekly status reports.",
+            "known for clear documentation and follow-up."
+          ],
+          "rationale": "The candidate demonstrates organizational skills through maintaining schedules and logs, and written communication skills through documentation and reporting."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Project-management tool experience",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Uses Smartsheet daily"
+          ],
+          "rationale": "The candidate explicitly states they use Smartsheet, which is listed as an example of a project-management tool."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Bachelor's degree",
+          "category": "education",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they hold an associate degree rather than a bachelor's degree."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "CAPM certification",
+          "category": "certification",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they do not have CAPM certification."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Logistics, transportation, or warehouse operations experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate explicitly states they have not worked in logistics or warehouse operations."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 14173.75,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1391.26,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 9034.48,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1044.52,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2692.62,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "education_test_001",
+      "domain": "education_research",
+      "extraction": {
+        "predicted_count": 14,
+        "gold_count": 8,
+        "matched_count": 8,
+        "category_correct": 7,
+        "importance_correct": 8,
+        "matched_requirements": [
+          {
+            "gold_requirement": "At least three years of research data-management experience",
+            "predicted_requirement": "At least three years of research data-management experience",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Strong R or Python experience",
+            "predicted_requirement": "Strong experience with R or Python",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "REDCap experience",
+            "predicted_requirement": "Experience with REDCap",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Git experience",
+            "predicted_requirement": "Experience with Git",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "HIPAA-regulated research data familiarity",
+            "predicted_requirement": "Familiarity with HIPAA-regulated research data",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Master's degree in a relevant quantitative field",
+            "predicted_requirement": "Master's degree in Biostatistics, Epidemiology, Data Science, Public Health, or a related quantitative field",
+            "similarity": 0.875
+          },
+          {
+            "gold_requirement": "Reproducible workflows, data-quality validation, and documentation knowledge",
+            "predicted_requirement": "Understand data-quality validation",
+            "similarity": 0.75
+          },
+          {
+            "gold_requirement": "Multi-site study experience",
+            "predicted_requirement": "Experience supporting multi-site studies",
+            "similarity": 0.75
+          }
+        ],
+        "category_errors": [
+          {
+            "gold_requirement": "Reproducible workflows, data-quality validation, and documentation knowledge",
+            "predicted_requirement": "Understand data-quality validation",
+            "expected_category": "domain_knowledge",
+            "predicted_category": "skill",
+            "similarity": 0.75
+          }
+        ],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Understand reproducible analysis workflows",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "Candidates should understand reproducible analysis workflows"
+          },
+          {
+            "requirement": "Understand documentation practices",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "Candidates should understand ... documentation practices."
+          },
+          {
+            "requirement": "Oversee data dictionaries",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The manager will oversee data dictionaries"
+          },
+          {
+            "requirement": "Oversee quality checks",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The manager will oversee ... quality checks"
+          },
+          {
+            "requirement": "Oversee versioned analysis datasets",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The manager will oversee ... versioned analysis datasets"
+          },
+          {
+            "requirement": "Oversee documentation used by investigators",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The manager will oversee ... documentation used by investigators across several institutions."
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 8,
+        "status_total": 8,
+        "status_errors": [],
+        "evidence_total": 7,
+        "evidence_grounded": 7,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 91.7,
+      "predicted_score": 91.7,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Master's degree in Biostatistics, Epidemiology, Data Science, Public Health, or a related quantitative field",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A master's degree in Biostatistics, Epidemiology, Data Science, Public Health, or a related quantitative field is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "At least three years of research data-management experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least three years of research data-management experience.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Strong experience with R or Python",
+          "category": "skill",
+          "importance": "must_have",
+          "source_text": "Strong experience with R or Python is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Understand reproducible analysis workflows",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should understand reproducible analysis workflows",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Understand data-quality validation",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should understand ... data-quality validation",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Understand documentation practices",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "Candidates should understand ... documentation practices.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Experience with REDCap",
+          "category": "tool",
+          "importance": "must_have",
+          "source_text": "Experience with REDCap is required.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Experience with Git",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "Experience with Git is important.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Familiarity with HIPAA-regulated research data",
+          "category": "domain_knowledge",
+          "importance": "preferred",
+          "source_text": "Familiarity with HIPAA-regulated research data is preferred.",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Experience supporting multi-site studies",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience supporting multi-site studies is preferred.",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Oversee data dictionaries",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The manager will oversee data dictionaries",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Oversee quality checks",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The manager will oversee ... quality checks",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "Oversee versioned analysis datasets",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The manager will oversee ... versioned analysis datasets",
+          "requirement_id": "R013"
+        },
+        {
+          "requirement": "Oversee documentation used by investigators",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The manager will oversee ... documentation used by investigators across several institutions.",
+          "requirement_id": "R014"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Master's degree in a relevant quantitative field",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "M.S. in Epidemiology"
+          ],
+          "rationale": "The candidate holds an M.S. in Epidemiology, which is a relevant quantitative field."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least three years of research data-management experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "four years of research data-management experience"
+          ],
+          "rationale": "The candidate has four years of experience, meeting the three-year requirement."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Strong R or Python experience",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Uses R and Python"
+          ],
+          "rationale": "The candidate explicitly states they use both R and Python."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Reproducible workflows, data-quality validation, and documentation knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "clean, validate, and version analysis datasets and writes reproducible scripts and data dictionaries"
+          ],
+          "rationale": "The candidate demonstrates experience with data validation, reproducible workflows, and documentation."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "REDCap experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Manages REDCap projects"
+          ],
+          "rationale": "The candidate has direct experience managing REDCap projects."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Git experience",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "uses Git for collaborative analysis code"
+          ],
+          "rationale": "The candidate has experience using Git."
+        },
+        {
+          "requirement_id": "R007",
+          "requirement": "HIPAA-regulated research data familiarity",
+          "category": "domain_knowledge",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "limited direct responsibility for HIPAA-regulated identifiable data"
+          ],
+          "rationale": "The candidate acknowledges limited responsibility, indicating some exposure but not full familiarity."
+        },
+        {
+          "requirement_id": "R008",
+          "requirement": "Multi-site study experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The candidate states that most projects have been single-site."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 11508.12,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1224.29,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 6390.6,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1008.88,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2870.2,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "education_test_002",
+      "domain": "education_research",
+      "extraction": {
+        "predicted_count": 13,
+        "gold_count": 6,
+        "matched_count": 6,
+        "category_correct": 6,
+        "importance_correct": 6,
+        "matched_requirements": [
+          {
+            "gold_requirement": "Bachelor's degree",
+            "predicted_requirement": "Bachelor's degree",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "At least one year of teaching experience with adult or English-language learners",
+            "predicted_requirement": "At least one year of teaching experience with adult learners or English-language learners",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "TESOL, TEFL, or CELTA certification",
+            "predicted_requirement": "TESOL, TEFL, or CELTA certification",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Spanish proficiency",
+            "predicted_requirement": "Spanish proficiency",
+            "similarity": 1.0
+          },
+          {
+            "gold_requirement": "Second-language teaching methods and mixed-level adaptation knowledge",
+            "predicted_requirement": "Understand second-language teaching methods",
+            "similarity": 0.8
+          },
+          {
+            "gold_requirement": "Online or hybrid teaching experience",
+            "predicted_requirement": "Experience with online or hybrid instruction",
+            "similarity": 0.8
+          }
+        ],
+        "category_errors": [],
+        "importance_errors": [],
+        "unsupported_requirements": [
+          {
+            "requirement": "Ability to adapt lessons for different proficiency levels",
+            "category": "skill",
+            "importance": "important",
+            "source_text": "be comfortable adapting lessons for different proficiency levels."
+          },
+          {
+            "requirement": "Reliable evening availability during the academic term",
+            "category": "other",
+            "importance": "must_have",
+            "source_text": "The role requires reliable evening availability during the academic term."
+          },
+          {
+            "requirement": "Plan lessons",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "The instructor will plan lessons"
+          },
+          {
+            "requirement": "Teach mixed-proficiency groups",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "teach mixed-proficiency groups"
+          },
+          {
+            "requirement": "Assess learner progress",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "assess learner progress"
+          },
+          {
+            "requirement": "Maintain attendance records",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "maintain attendance records"
+          },
+          {
+            "requirement": "Communicate with program staff",
+            "category": "responsibility",
+            "importance": "important",
+            "source_text": "communicate with program staff."
+          }
+        ],
+        "missed_requirements": []
+      },
+      "matching": {
+        "status_correct": 6,
+        "status_total": 6,
+        "status_errors": [],
+        "evidence_total": 6,
+        "evidence_grounded": 6,
+        "hallucinated_evidence": 0
+      },
+      "gold_score": 96.2,
+      "predicted_score": 96.2,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "At least one year of teaching experience with adult learners or English-language learners",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have at least one year of teaching experience with adult learners or English-language learners.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "TESOL, TEFL, or CELTA certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "TESOL, TEFL, or CELTA certification is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Understand second-language teaching methods",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "Candidates should understand second-language teaching methods",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "Ability to adapt lessons for different proficiency levels",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "be comfortable adapting lessons for different proficiency levels.",
+          "requirement_id": "R005"
+        },
+        {
+          "requirement": "Experience with online or hybrid instruction",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Experience with online or hybrid instruction is preferred.",
+          "requirement_id": "R006"
+        },
+        {
+          "requirement": "Spanish proficiency",
+          "category": "language",
+          "importance": "preferred",
+          "source_text": "Spanish proficiency is preferred but not required.",
+          "requirement_id": "R007"
+        },
+        {
+          "requirement": "Reliable evening availability during the academic term",
+          "category": "other",
+          "importance": "must_have",
+          "source_text": "The role requires reliable evening availability during the academic term.",
+          "requirement_id": "R008"
+        },
+        {
+          "requirement": "Plan lessons",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "The instructor will plan lessons",
+          "requirement_id": "R009"
+        },
+        {
+          "requirement": "Teach mixed-proficiency groups",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "teach mixed-proficiency groups",
+          "requirement_id": "R010"
+        },
+        {
+          "requirement": "Assess learner progress",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "assess learner progress",
+          "requirement_id": "R011"
+        },
+        {
+          "requirement": "Maintain attendance records",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "maintain attendance records",
+          "requirement_id": "R012"
+        },
+        {
+          "requirement": "Communicate with program staff",
+          "category": "responsibility",
+          "importance": "important",
+          "source_text": "communicate with program staff.",
+          "requirement_id": "R013"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.A. in English"
+          ],
+          "rationale": "The candidate holds a B.A. in English, which satisfies the bachelor's degree requirement."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "At least one year of teaching experience with adult or English-language learners",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "two years of experience teaching adult English-language learners"
+          ],
+          "rationale": "The candidate has two years of experience teaching adult English-language learners, meeting the one-year requirement."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "TESOL, TEFL, or CELTA certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "CELTA certification"
+          ],
+          "rationale": "The candidate possesses a CELTA certification."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Second-language teaching methods and mixed-level adaptation knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Plans lessons for mixed-level classes, assesses learner progress, and adapts activities for different proficiency levels."
+          ],
+          "rationale": "The candidate demonstrates experience in adapting lessons for different proficiency levels and mixed-level classes."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "Online or hybrid teaching experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Taught one semester in a hybrid format using Zoom and Google Classroom."
+          ],
+          "rationale": "The candidate has experience with hybrid instruction."
+        },
+        {
+          "requirement_id": "R006",
+          "requirement": "Spanish proficiency",
+          "category": "language",
+          "importance": "preferred",
+          "status": "partial",
+          "evidence": [
+            "Has beginner-level Spanish and is not professionally proficient."
+          ],
+          "rationale": "The candidate has beginner-level Spanish, but lacks the professional proficiency implied by the requirement."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v2",
+        "total_latency_ms": 15155.15,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v2",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1329.33,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v2",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 3381.26,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1316.9,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 9115.82,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    }
+  ],
+  "failures": []
+}

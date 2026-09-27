@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 from sqlalchemy import Column, JSON, Text
 from sqlmodel import Field, SQLModel
@@ -21,7 +21,22 @@ class Analysis(SQLModel, table=True):
 
     match_score: float
 
+    score_breakdown: Dict[str, float] = Field(
+        default_factory=dict,
+        sa_column=Column(JSON),
+    )
+
+    requirement_matches: List[dict] = Field(
+        default_factory=list,
+        sa_column=Column(JSON),
+    )
+
     matched_requirements: List[str] = Field(
+        default_factory=list,
+        sa_column=Column(JSON),
+    )
+
+    partial_requirements: List[str] = Field(
         default_factory=list,
         sa_column=Column(JSON),
     )
@@ -53,4 +68,12 @@ class Analysis(SQLModel, table=True):
 
     created_at: datetime = Field(
         default_factory=lambda: datetime.now(timezone.utc)
+    )
+
+    observability: Optional[Dict] = Field(
+        default=None,
+        sa_column=Column(
+            JSON,
+            nullable=True,
+        ),
     )

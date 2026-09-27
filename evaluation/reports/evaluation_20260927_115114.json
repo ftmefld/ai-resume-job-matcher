@@ -1,0 +1,899 @@
+{
+  "created_at": "2026-09-27T11:51:14.190085+00:00",
+  "summary": {
+    "cases": 6,
+    "requirement_extraction_precision": 0.9259,
+    "requirement_extraction_recall": 0.9259,
+    "category_accuracy": 0.76,
+    "importance_accuracy": 0.96,
+    "match_status_accuracy": 1.0,
+    "evidence_grounding_rate": 1.0,
+    "score_mae": 0.0,
+    "average_latency_ms": 22775.57,
+    "fallback_rate": 0.8333
+  },
+  "cases": [
+    {
+      "case_id": "software_001",
+      "domain": "software_ai",
+      "extraction": {
+        "predicted_count": 5,
+        "gold_count": 5,
+        "matched_count": 5,
+        "category_correct": 0,
+        "importance_correct": 5
+      },
+      "matching": {
+        "status_correct": 5,
+        "status_total": 5,
+        "evidence_total": 3,
+        "evidence_grounded": 3
+      },
+      "gold_score": 69.2,
+      "predicted_score": 69.2,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Strong Python experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates must have strong Python experience",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Experience building APIs with FastAPI",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "experience building APIs with FastAPI",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "SQL knowledge",
+          "category": "domain_knowledge",
+          "importance": "must_have",
+          "source_text": "SQL knowledge and Docker experience are required",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Docker experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Docker experience are required",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "AWS experience",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "AWS experience is preferred",
+          "requirement_id": "R005"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Python experience",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "three years of Python experience"
+          ],
+          "rationale": "The candidate has three years of Python experience."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "FastAPI experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Built REST APIs using FastAPI"
+          ],
+          "rationale": "The candidate has experience building REST APIs using FastAPI."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "SQL knowledge",
+          "category": "skill",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Experienced with SQL"
+          ],
+          "rationale": "The candidate explicitly states they are experienced with SQL."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Docker experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention Docker experience."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "AWS experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention AWS experience."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 39950.78,
+        "llm_call_count": 3,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 17489.72,
+            "status": "error",
+            "error_type": "ServerError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2130.58,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 20327.87,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "healthcare_001",
+      "domain": "healthcare",
+      "extraction": {
+        "predicted_count": 4,
+        "gold_count": 4,
+        "matched_count": 4,
+        "category_correct": 4,
+        "importance_correct": 4
+      },
+      "matching": {
+        "status_correct": 4,
+        "status_total": 4,
+        "evidence_total": 3,
+        "evidence_grounded": 3
+      },
+      "gold_score": 75.0,
+      "predicted_score": 75.0,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Active RN license",
+          "category": "license",
+          "importance": "must_have",
+          "source_text": "Applicants must hold an active RN license",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "BLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "source_text": "BLS certification",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "At least three years of acute-care nursing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "At least three years of acute-care nursing experience is required.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "ICU experience",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "ICU experience is preferred.",
+          "requirement_id": "R004"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Active RN license",
+          "category": "license",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "active RN license"
+          ],
+          "rationale": "The candidate's resume explicitly states they have an active RN license."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "BLS certification",
+          "category": "certification",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "current BLS certification"
+          ],
+          "rationale": "The candidate's resume explicitly states they have a current BLS certification."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Three years of acute-care nursing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "Two years of acute-care nursing experience"
+          ],
+          "rationale": "The candidate has two years of acute-care nursing experience, which is less than the required three years."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "ICU experience",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not contain any mention of ICU experience."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 37158.17,
+        "llm_call_count": 2,
+        "fallback_used": false,
+        "models_used": [
+          "gemini-3.5-flash"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 20894.02,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 16262.74,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "finance_001",
+      "domain": "finance_accounting",
+      "extraction": {
+        "predicted_count": 5,
+        "gold_count": 5,
+        "matched_count": 4,
+        "category_correct": 4,
+        "importance_correct": 4
+      },
+      "matching": {
+        "status_correct": 5,
+        "status_total": 5,
+        "evidence_total": 4,
+        "evidence_grounded": 4
+      },
+      "gold_score": 77.3,
+      "predicted_score": 77.3,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree in Accounting or Finance",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Accounting or Finance is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Three years of accounting experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Three years of accounting experience is required.",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Understanding of GAAP",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "Candidates should understand GAAP",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Advanced Excel skills",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "have advanced Excel skills",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "CPA certification",
+          "category": "certification",
+          "importance": "preferred",
+          "source_text": "CPA certification is preferred.",
+          "requirement_id": "R005"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Accounting or Finance",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Bachelor of Science in Accounting"
+          ],
+          "rationale": "The candidate holds a Bachelor of Science in Accounting."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "GAAP knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Strong knowledge of GAAP"
+          ],
+          "rationale": "The candidate explicitly states they have strong knowledge of GAAP."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Advanced Excel skills",
+          "category": "tool",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "advanced Microsoft Excel skills"
+          ],
+          "rationale": "The candidate explicitly states they have advanced Microsoft Excel skills."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Three years of accounting experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "Two years of accounting experience"
+          ],
+          "rationale": "The candidate has two years of accounting experience, which is less than the three years required."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "CPA certification",
+          "category": "certification",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention a CPA certification."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 18548.86,
+        "llm_call_count": 3,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 14916.24,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1057.59,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2572.98,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "engineering_001",
+      "domain": "civil_engineering",
+      "extraction": {
+        "predicted_count": 4,
+        "gold_count": 4,
+        "matched_count": 4,
+        "category_correct": 4,
+        "importance_correct": 4
+      },
+      "matching": {
+        "status_correct": 4,
+        "status_total": 4,
+        "evidence_total": 3,
+        "evidence_grounded": 3
+      },
+      "gold_score": 75.0,
+      "predicted_score": 75.0,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Bachelor's degree in Civil Engineering",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A bachelor's degree in Civil Engineering is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Experience with AutoCAD",
+          "category": "tool",
+          "importance": "must_have",
+          "source_text": "Candidates must have experience with AutoCAD",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "At least four years of civil engineering experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "at least four years of civil engineering experience.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Professional Engineer (PE) license",
+          "category": "license",
+          "importance": "preferred",
+          "source_text": "A Professional Engineer (PE) license is preferred.",
+          "requirement_id": "R004"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Bachelor's degree in Civil Engineering",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "B.S. in Civil Engineering"
+          ],
+          "rationale": "The candidate holds a B.S. in Civil Engineering."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "AutoCAD experience",
+          "category": "tool",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "Regularly used AutoCAD for engineering drawings and design documentation."
+          ],
+          "rationale": "The candidate explicitly states they regularly used AutoCAD."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Four years of civil engineering experience",
+          "category": "experience",
+          "importance": "must_have",
+          "status": "partial",
+          "evidence": [
+            "two years of professional experience"
+          ],
+          "rationale": "The candidate has two years of experience, which is less than the four years required."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Professional Engineer license",
+          "category": "license",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention a Professional Engineer (PE) license."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 9957.08,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1093.75,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2570.14,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1078.07,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 5212.74,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "marketing_001",
+      "domain": "marketing",
+      "extraction": {
+        "predicted_count": 5,
+        "gold_count": 5,
+        "matched_count": 4,
+        "category_correct": 3,
+        "importance_correct": 3
+      },
+      "matching": {
+        "status_correct": 5,
+        "status_total": 5,
+        "evidence_total": 3,
+        "evidence_grounded": 3
+      },
+      "gold_score": 66.7,
+      "predicted_score": 66.7,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "At least three years of digital marketing experience",
+          "category": "experience",
+          "importance": "must_have",
+          "source_text": "Candidates should have at least three years of digital marketing experience",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Strong SEO knowledge",
+          "category": "domain_knowledge",
+          "importance": "important",
+          "source_text": "strong SEO knowledge",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Experience managing digital campaigns",
+          "category": "experience",
+          "importance": "important",
+          "source_text": "experience managing digital campaigns",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Proficiency with Google Analytics",
+          "category": "tool",
+          "importance": "important",
+          "source_text": "proficiency with Google Analytics",
+          "requirement_id": "R004"
+        },
+        {
+          "requirement": "HubSpot experience",
+          "category": "tool",
+          "importance": "preferred",
+          "source_text": "HubSpot experience is preferred",
+          "requirement_id": "R005"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Three years of digital marketing experience",
+          "category": "experience",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "four years of experience"
+          ],
+          "rationale": "The candidate has four years of experience, which meets the three-year requirement."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "SEO knowledge",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Led SEO optimization projects"
+          ],
+          "rationale": "The candidate has experience leading SEO optimization projects."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Digital campaign management",
+          "category": "responsibility",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "managing paid and organic campaigns"
+          ],
+          "rationale": "The candidate has experience managing digital campaigns."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Google Analytics",
+          "category": "tool",
+          "importance": "important",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention Google Analytics."
+        },
+        {
+          "requirement_id": "R005",
+          "requirement": "HubSpot experience",
+          "category": "tool",
+          "importance": "preferred",
+          "status": "missing",
+          "evidence": [],
+          "rationale": "The resume does not mention HubSpot."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 9708.65,
+        "llm_call_count": 4,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1032.57,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 5343.14,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1042.49,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 2285.71,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "education_001",
+      "domain": "education_research",
+      "extraction": {
+        "predicted_count": 4,
+        "gold_count": 4,
+        "matched_count": 4,
+        "category_correct": 4,
+        "importance_correct": 4
+      },
+      "matching": {
+        "status_correct": 4,
+        "status_total": 4,
+        "evidence_total": 4,
+        "evidence_grounded": 4
+      },
+      "gold_score": 87.5,
+      "predicted_score": 87.5,
+      "score_absolute_error": 0.0,
+      "predicted_requirements": [
+        {
+          "requirement": "Master's degree",
+          "category": "education",
+          "importance": "must_have",
+          "source_text": "A master's degree is required.",
+          "requirement_id": "R001"
+        },
+        {
+          "requirement": "Two years of university teaching experience",
+          "category": "experience",
+          "importance": "important",
+          "source_text": "Candidates should have at least two years of university teaching experience",
+          "requirement_id": "R002"
+        },
+        {
+          "requirement": "Statistical data analysis",
+          "category": "skill",
+          "importance": "important",
+          "source_text": "experience with statistical data analysis.",
+          "requirement_id": "R003"
+        },
+        {
+          "requirement": "Peer-reviewed publications",
+          "category": "experience",
+          "importance": "preferred",
+          "source_text": "Peer-reviewed publications are preferred.",
+          "requirement_id": "R004"
+        }
+      ],
+      "predicted_matches": [
+        {
+          "requirement_id": "R001",
+          "requirement": "Master's degree",
+          "category": "education",
+          "importance": "must_have",
+          "status": "matched",
+          "evidence": [
+            "M.S. graduate"
+          ],
+          "rationale": "The candidate is an M.S. graduate, which satisfies the Master's degree requirement."
+        },
+        {
+          "requirement_id": "R002",
+          "requirement": "Two years of university teaching experience",
+          "category": "experience",
+          "importance": "important",
+          "status": "partial",
+          "evidence": [
+            "one year of experience as a university teaching assistant"
+          ],
+          "rationale": "The candidate has one year of university teaching assistant experience, which only partially meets the requirement of at least two years of university teaching experience."
+        },
+        {
+          "requirement_id": "R003",
+          "requirement": "Statistical data analysis experience",
+          "category": "skill",
+          "importance": "important",
+          "status": "matched",
+          "evidence": [
+            "Conducted quantitative research using Python and statistical analysis."
+          ],
+          "rationale": "The candidate has experience conducting quantitative research using statistical analysis."
+        },
+        {
+          "requirement_id": "R004",
+          "requirement": "Peer-reviewed publications",
+          "category": "experience",
+          "importance": "preferred",
+          "status": "matched",
+          "evidence": [
+            "Co-authored a peer-reviewed journal publication."
+          ],
+          "rationale": "The candidate has co-authored a peer-reviewed journal publication, satisfying the preference for peer-reviewed publications."
+        }
+      ],
+      "observability": {
+        "pipeline_version": "evaluation-v1",
+        "total_latency_ms": 21329.86,
+        "llm_call_count": 3,
+        "fallback_used": true,
+        "models_used": [
+          "gemini-3.5-flash",
+          "gemini-3.1-flash-lite"
+        ],
+        "prompt_versions": {
+          "requirement_extraction": "req-extract-v1",
+          "evidence_matching": "evidence-match-v1"
+        },
+        "calls": [
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 1104.85,
+            "status": "error",
+            "error_type": "ClientError"
+          },
+          {
+            "stage": "requirement_extraction",
+            "prompt_version": "req-extract-v1",
+            "model": "gemini-3.1-flash-lite",
+            "is_fallback": true,
+            "latency_ms": 4001.79,
+            "status": "success",
+            "error_type": null
+          },
+          {
+            "stage": "evidence_matching",
+            "prompt_version": "evidence-match-v1",
+            "model": "gemini-3.5-flash",
+            "is_fallback": false,
+            "latency_ms": 16220.97,
+            "status": "success",
+            "error_type": null
+          }
+        ]
+      }
+    }
+  ]
+}

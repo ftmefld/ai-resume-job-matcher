@@ -18,21 +18,49 @@ def create_analysis(
     analysis = Analysis(
         resume_text=resume_text,
         job_description=job_description,
+
         match_score=float(
-            analysis_result.get("match_score", 0)
+            analysis_result.get(
+                "match_score",
+                0,
+            )
         ),
-        matched_requirements=analysis_result.get(
-        "matched_requirements",
+
+        score_breakdown=analysis_result.get(
+            "score_breakdown",
+            {},
+        ),
+
+        requirement_matches=analysis_result.get(
+            "requirement_matches",
             [],
         ),
+
+        matched_requirements=analysis_result.get(
+            "matched_requirements",
+            [],
+        ),
+
+        partial_requirements=analysis_result.get(
+            "partial_requirements",
+            [],
+        ),
+
         missing_requirements=analysis_result.get(
             "missing_requirements",
             [],
         ),
+
         suggestions=analysis_result.get(
             "suggestions",
             [],
         ),
+
+        observability=analysis_result.get(
+            "observability",
+            None
+        ),
+
         input_type=input_type,
         resume_filename=resume_filename,
         resume_file_type=resume_file_type,
@@ -63,8 +91,16 @@ def get_recent_analyses(
 
     statement = (
         select(Analysis)
-        .order_by(Analysis.created_at.desc())
+        .order_by(
+            Analysis.created_at.desc()
+        )
         .limit(limit)
     )
 
-    return session.exec(statement).all()
+    results = session.exec(
+        statement
+    )
+
+    return list(
+        results.all()
+    )
